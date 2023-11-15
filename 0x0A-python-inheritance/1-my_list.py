@@ -1,13 +1,16 @@
 #!/usr/bin/python3
-""" class inheritance """
+"""inheritance"""
 
 
 class MyList(list):
-    """ Parent class """
-    def __init__(self):
-        """init object"""
-        super().__init__()
+    """class utilizing list class"""
 
-        def print_sorted(self):
-            """print the sorted list"""
-            print(sorted(self))
+    def __init__(self):
+        """initializer for MyList"""
+        pass
+
+    def print_sorted(self):
+        """print sorted list"""
+        res = list.copy(self)
+        list.sort(res)
+        print(res)
