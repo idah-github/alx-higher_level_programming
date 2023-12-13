@@ -1,3 +1,3 @@
 -- show tables
 
-SHOW FULL TABLES;
+SHOW TABLES;
