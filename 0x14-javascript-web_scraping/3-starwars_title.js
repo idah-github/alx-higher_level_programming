@@ -2,7 +2,7 @@
 
 const request = require('request');
 const mvId = process.argv[2];
-const API_URL = 'https://swapi-api.hbtn.io/api/films/&{mvId}';
+const API_URL = `https://swapi-api.hbtn.io/api/films/${mvId}`;
 
 request(API_URL, function (err, response, body) {
   if (err) {
@@ -14,3 +14,4 @@ request(API_URL, function (err, response, body) {
     console.log('Error code: ' + response.statusCode);
   }
 });
+
